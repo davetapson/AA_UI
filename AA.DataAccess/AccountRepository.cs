@@ -32,5 +32,15 @@ namespace AA.DataAccess
 
             return null;
         }
+
+        public List<Account> Retrieve()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Account Get(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
