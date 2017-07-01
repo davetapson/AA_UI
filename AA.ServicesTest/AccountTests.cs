@@ -36,5 +36,19 @@ namespace AA.ServicesTest
             //Assert
         }
 
+        [TestMethod]
+        public void GetAccount()
+        {
+            // Arrange
+            Account account;
+            string accountNumber = "A1";
+
+            // Act
+            account = new Account(accountNumber);
+
+            //Assert
+            Assert.AreEqual(accountNumber, account.AccountNumber);
+        }
+
     }
 }

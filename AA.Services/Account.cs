@@ -1,4 +1,5 @@
 ﻿using AA.Common;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace AA.Services
@@ -11,7 +12,7 @@ namespace AA.Services
 
             AccountNumber = accountNumber;
         }
-
+        public int Id { get; set; }
         [Required (ErrorMessage ="An Account Number is required")]
         public string AccountNumber { get; set; }
         public decimal AvailableEquity { get; set; }
@@ -23,5 +24,6 @@ namespace AA.Services
         public decimal EquityWithLoanValue { get; set; }
         public decimal PreviousEquityWithLoanValue { get; set; }
         public decimal GrossPositonValue { get; set; }
+        public List<Strategy> Strategies { get; set; }
     }
 }
